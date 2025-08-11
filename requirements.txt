@@ -1,0 +1,13 @@
+streamlit
+fastapi
+uvicorn
+spacy
+sentence-transformers
+numpy
+pandas
+scikit-learn
+pdfplumber
+python-docx
+rapidfuzz
+pydantic
+typer
