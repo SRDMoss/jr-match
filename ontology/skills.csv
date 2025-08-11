@@ -1,1 +1,7 @@
 id,label,alt_labels,parent_id
+SK001,Python,"py,python3",SK000
+SK002,spaCy,"spacy,nlp-spacy",SK001
+SK003,FAISS,"faiss index",SK000
+SK004,Vector Embeddings,"sentence-transformers,embeddings",SK000
+SK005,Streamlit,"streamlit app",SK000
+SK000,Software,"", 
