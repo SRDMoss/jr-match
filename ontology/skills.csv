@@ -1,7 +1,747 @@
 id,label,alt_labels,parent_id
-SK001,Python,"py,python3",SK000
-SK002,spaCy,"spacy,nlp-spacy",SK001
-SK003,FAISS,"faiss index",SK000
-SK004,Vector Embeddings,"sentence-transformers,embeddings",SK000
-SK005,Streamlit,"streamlit app",SK000
-SK000,Software,"", 
+SK0057,Teleconferencing software,teleconferencingsoftware,43233502
+SK0063,Amazon Web Services AWS software,amazonwebservicesawssoftware,43232306
+SK0074,Citrix cloud computing software,citrixcloudcomputingsoftware,43232901
+SK0077,Customer information control system CICS,customerinformationcontrolsystemcics,43232313
+SK0088,Geographic information system GIS software,geographicinformationsystemgissoftware,43232510
+SK0136,Oracle E-Business Suite Financials,"oracle e business suite financials,oracle ebusiness suite financials,oraclee-businesssuitefinancials",43231604
+SK0141,Oracle PeopleSoft Financials,oraclepeoplesoftfinancials,43231602
+SK0148,PostgreSQL,,43232311
+SK0165,Social media sites,socialmediasites,43232107
+SK0184,Cisco AnyConnect,ciscoanyconnect,43232901
+SK0185,Cisco Webex,ciscowebex,43233502
+SK0189,Legislative Automative Workflow System LAWS,legislativeautomativeworkflowsystemlaws,43232306
+SK0224,JavaScript,,43232408
+SK0232,Social media software,socialmediasoftware,43232107
+SK0253,Figma,,43232404
+SK0254,GitHub,,43232701
+SK0264,MySQL,,43232306
+SK0268,Oracle JavaServer Pages JSP,oraclejavaserverpagesjsp,43232408
+SK0271,Python,,43232405
+SK0316,Incident command system ICS software,incidentcommandsystemicssoftware,43231507
+SK0336,Cisco Systems WAN Manager,ciscosystemswanmanager,43232917
+SK0340,Enterprise JavaBeans,enterprisejavabeans,43232408
+SK0369,Node.js,"node,node js,nodejs",43232408
+SK0373,Oracle Java,oraclejava,43232405
+SK0391,Spring Framework,springframework,43232408
+SK0414,Automatic Data Processing PC payroll for windows PCPW,automaticdataprocessingpcpayrollforwindowspcpw,43231505
+SK0429,Financial accounting software,financialaccountingsoftware,43231601
+SK0436,SunGard Financial Systems AddVantage,sungardfinancialsystemsaddvantage,43231604
+SK0439,Citect IIM,citectiim,43232608
+SK0443,Computer integrated manufacturing CIM software,computerintegratedmanufacturingcimsoftware,43232108
+SK0444,Computer integrated manufacturing CIM time manager software,computerintegratedmanufacturingcimtimemanagersoftware,43231505
+SK0445,Computer integrated manufacturing CIM warehouse shipping manager software,computerintegratedmanufacturingcimwarehouseshippingmanagersoftware,43231508
+SK0451,Financial planning software,financialplanningsoftware,43231604
+SK0480,Infinity QS ProFicient,infinityqsproficient,43232608
+SK0496,Thermo Fisher Scientific Laboratory Information Management Systems LIMS,thermofisherscientificlaboratoryinformationmanagementsystemslims,43232605
+SK0509,Infor Lawson Supply Chain Management,inforlawsonsupplychainmanagement,43231506
+SK0511,Oracle PeopleSoft Enterprise Financial Management Solutions,oraclepeoplesoftenterprisefinancialmanagementsolutions,43231604
+SK0546,Integrated Decision Support Corporation Expert Fuel,integrateddecisionsupportcorporationexpertfuel,43231506
+SK0547,Integrated Decision Support Corporation Netwise Supply Chain,integrateddecisionsupportcorporationnetwisesupplychain,43231506
+SK0548,Integrated Decision Support Corporation Route Advice,integrateddecisionsupportcorporationrouteadvice,43232504
+SK0549,Integrated Decision Support Corporation Swap Advice,integrateddecisionsupportcorporationswapadvice,43231506
+SK0550,Integrated Decision Support Match Advice,integrateddecisionsupportmatchadvice,43232605
+SK0551,Integrated Decision Support Netwise Enterprise,integrateddecisionsupportnetwiseenterprise,43232605
+SK0552,Integrated Decision Support Netwise Frontline,integrateddecisionsupportnetwisefrontline,43232605
+SK0573,Scanlon Associates LogPak,scanlonassociateslogpak,43232606
+SK0591,CDC Supply Chain,cdcsupplychain,43231506
+SK0607,Lawson S3 Supply Chain Management,lawsons3supplychainmanagement,43231506
+SK0645,Humanic Design Human Resources Management System,humanicdesignhumanresourcesmanagementsystem,43231505
+SK0647,Jenss & Associates CompKeeper,jenss&associatescompkeeper,43231505
+SK0648,Lawson Human Resource Management,lawsonhumanresourcemanagement,43231505
+SK0657,Piney Creek Digital Protocol System,pineycreekdigitalprotocolsystem,43231505
+SK0688,Lawson Human Resources Suite,lawsonhumanresourcessuite,43231505
+SK0694,Paylocity Web Pay,paylocitywebpay,43231605
+SK0765,OnPoint Digital OnPoint Learning & Performance Suite,onpointdigitalonpointlearning&performancesuite,43232502
+SK0806,CDA International Manifold System,cdainternationalmanifoldsystem,43233506
+SK0818,Geographic information system GIS systems,geographicinformationsystemgissystems,43232510
+SK0839,Specialized Data Systems Ultra Farm,specializeddatasystemsultrafarm,43231601
+SK0885,Cirrus Group Daycare Works,cirrusgroupdaycareworks,43231602
+SK0930,Specialized Data Systems School Office,specializeddatasystemsschooloffice,43231602
+SK0935,Ellucian Colleague,elluciancolleague,43231602
+SK0936,Ellucian Degree Works,elluciandegreeworks,43231507
+SK0944,SunGard Higher Education Banner Unified Digital Campus,sungardhighereducationbannerunifieddigitalcampus,43231602
+SK0956,Cisco IOS,ciscoios,43233004
+SK0960,Django,,43232408
+SK0961,Docker,,43232701
+SK0966,Git,,43232203
+SK0971,JavaScript Object Notation JSON,javascriptobjectnotationjson,43232408
+SK0975,React,,43232408
+SK0997,DataTeam Lunch Express,datateamlunchexpress,43232611
+SK1005,"IPro Restaurant Inventory, Recipe & Menu Software","iprorestaurantinventory,recipe&menusoftware",43232605
+SK1033,American Medical Association CodeManager,americanmedicalassociationcodemanager,43232301
+SK1034,API Healthcare ActiveStaffer,apihealthcareactivestaffer,43232108
+SK1054,GE Healthcare Centricity EMR,gehealthcarecentricityemr,43232610
+SK1066,Relative Values for Physicians,relativevaluesforphysicians,43232605
+SK1079,Clinical data management system CDMS,clinicaldatamanagementsystemcdms,43232306
+SK1082,Electronic data capture EDC software,electronicdatacaptureedcsoftware,43232605
+SK1084,InferMed MACRO Electronic Data Capture,infermedmacroelectronicdatacapture,43232605
+SK1087,KIKA Veracity,kikaveracity,43232306
+SK1092,PercipEnz Technologies OnCore-Clinical Research Management OnCore-CRM,"percipenz technologies oncore clinical research management oncore crm,percipenz technologies oncoreclinical research management oncorecrm,percipenztechnologiesoncore-clinicalresearchmanagementoncore-crm",43232306
+SK1097,Sierra Scientific Software CRIS,sierrascientificsoftwarecris,43232306
+SK1099,SyMetric Sciences SyMetric,symetricsciencessymetric,43232306
+SK1103,ESRI ArcInfo,esriarcinfo,43232510
+SK1119,Facility database software,facilitydatabasesoftware,43232306
+SK1124,Web Box Activity Tracing System WebBATS,webboxactivitytracingsystemwebbats,43232306
+SK1157,Yardi Systems Yardi Voyager Commercial,yardisystemsyardivoyagercommercial,43232306
+SK1165,Digital Engineering Corporation E-MAPS,"digital engineering corporation e maps,digital engineering corporation emaps,digitalengineeringcorporatione-maps",43233506
+SK1177,Financial reporting software,financialreportingsoftware,43231601
+SK1181,iCIMS Talent Cloud software,icimstalentcloudsoftware,43231505
+SK1183,Twin Tiers Technologies CIMS,twintierstechnologiescims,43232306
+SK1212,Adlib Express,adlibexpress,43232202
+SK1229,Electronic document management system EDMS,electronicdocumentmanagementsystemedms,43232202
+SK1267,AssurX Financial Services Compliance Management System,assurxfinancialservicescompliancemanagementsystem,43232606
+SK1282,EtQ FDA cGxP Compliance Software for Life Sciences,etqfdacgxpcompliancesoftwareforlifesciences,43232606
+SK1319,Web conferencing software,webconferencingsoftware,43233502
+SK1332,Videoconferencing software,videoconferencingsoftware,43233502
+SK1334,Google Angular,googleangular,43232408
+SK1354,Sourcing Simulator,sourcingsimulator,43231503
+SK1355,Specialized Business Solutions Keystroke POS,specializedbusinesssolutionskeystrokepos,43232611
+SK1366,Financial analysis software,financialanalysissoftware,43231604
+SK1379,Automatic Data Processing Autosource,automaticdataprocessingautosource,43232202
+SK1380,Automatic Data Processing Claims Manager & Dispatch,automaticdataprocessingclaimsmanager&dispatch,43232202
+SK1381,Automatic Data Processing Estimating,automaticdataprocessingestimating,43231604
+SK1393,CCC GuidePost Decision Support,cccguidepostdecisionsupport,43231511
+SK1414,Injury Sciences EDR InSight,injurysciencesedrinsight,43232605
+SK1432,App Software Associations AppTrak.net,"app software associations apptrak net,app software associations apptraknet,appsoftwareassociationsapptrak.net",43231507
+SK1437,NCH Software Express Invoice,nchsoftwareexpressinvoice,43231601
+SK1442,Commercial driver's license information system CDLIS,commercialdriver'slicenseinformationsystemcdlis,43232306
+SK1444,Digital imaging system software,digitalimagingsystemsoftware,43232102
+SK1453,Fully Integrated Environmental Location Decision Support FIELDS,fullyintegratedenvironmentallocationdecisionsupportfields,43232605
+SK1458,Spatial Analysis and Decision Assistance SADA,spatialanalysisanddecisionassistancesada,43232605
+SK1464,Berkshire Associates BALANCEaap,berkshireassociatesbalanceaap,43231505
+SK1494,Douglas Associates Forensic Filer,douglasassociatesforensicfiler,43232306
+SK1495,EMC Documentum,emcdocumentum,43232202
+SK1497,Genetic database software,geneticdatabasesoftware,43232306
+SK1506,Automated commercial environment software ACE,automatedcommercialenvironmentsoftwareace,43232306
+SK1509,Electronic data interchange EDI software,electronicdatainterchangeedisoftware,43233501
+SK1523,Decisioneering Crystal Ball,decisioneeringcrystalball,43232605
+SK1555,Ellucian Banner Human Resources,ellucianbannerhumanresources,43231505
+SK1563,ICIMS,,43231505
+SK1605,Kubernetes,,43232701
+SK1607,LaborSoft LaborForce Discipline Manager module,laborsoftlaborforcedisciplinemanagermodule,43231505
+SK1610,LaborSoft LaborForce Incident Tracking module,laborsoftlaborforceincidenttrackingmodule,43231505
+SK1663,Convention Industry Council CIC APEX Toolbox,conventionindustrycouncilcicapextoolbox,43231507
+SK1664,Dean Evans & Associates EMS Professional,deanevans&associatesemsprofessional,43232306
+SK1705,Humanic Design Employmee Self-Service,"humanic design employmee self service,humanic design employmee selfservice,humanicdesignemploymeeself-service",43231505
+SK1709,Lawson ERP,lawsonerp,43231602
+SK1721,Stroud & Associates Employee Benefits Administration System,stroud&associatesemployeebenefitsadministrationsystem,43231505
+SK1728,VUE Benefits Manager,vuebenefitsmanager,43231505
+SK1729,VUE Compensation Management,vuecompensationmanagement,43231505
+SK1755,Geographic information system GIS marketing software,geographicinformationsystemgismarketingsoftware,43232306
+SK1780,Thomson Financial Investext,thomsonfinancialinvestext,43232309
+SK1785,Vantage MCIF,vantagemcif,43232303
+SK1799,IBM Digital Analytics,ibmdigitalanalytics,43232314
+SK1849,Cisco Systems CiscoWorks,ciscosystemsciscoworks,43232804
+SK1862,Social networking software,socialnetworkingsoftware,43232107
+SK1890,AuditWare financial reporting and auditing software,auditwarefinancialreportingandauditingsoftware,43231604
+SK1892,Automation Counselors municiPAL,automationcounselorsmunicipal,43231601
+SK1897,Bi3 Financial Statement Fraud Analysis,bi3financialstatementfraudanalysis,43231604
+SK1912,CCIS AccountAbility,ccisaccountability,43231601
+SK1923,Digital analysis tests and statistics DATAS for Excel,digitalanalysistestsandstatisticsdatasforexcel,43231604
+SK1924,Digital analysis tests and statistics DATAS for SAS,digitalanalysistestsandstatisticsdatasforsas,43231604
+SK1928,Financial Competence,financialcompetence,43231604
+SK1929,Financial statement software,financialstatementsoftware,43231601
+SK1930,Fixed-assets depreciation software,"fixed assets depreciation software,fixed-assetsdepreciationsoftware,fixedassets depreciation software",43231604
+SK1940,Intellitax financial solutions software,intellitaxfinancialsolutionssoftware,43231603
+SK1949,KPB Associates TaxStream,kpbassociatestaxstream,43231603
+SK1967,Pentana audit work system PAWS,pentanaauditworksystempaws,43231604
+SK1992,Star Software Fixed Asset Depreciation,starsoftwarefixedassetdepreciation,43231604
+SK1998,Thomson Creative Solutions Financial Analysis CS,thomsoncreativesolutionsfinancialanalysiscs,43231604
+SK2020,ACI Appraiser's Choice,aciappraiser'schoice,43232112
+SK2026,Business Management Systems Municipal Geographic Management System MGMS,businessmanagementsystemsmunicipalgeographicmanagementsystemmgms,43232306
+SK2027,Compass Municipal Services CAMAlot,compassmunicipalservicescamalot,43232605
+SK2028,Concierge Systems Report Concierge,conciergesystemsreportconcierge,43232104
+SK2052,REI Wise Commercial,reiwisecommercial,43231604
+SK2069,Lilly Software Associates VISUAL Enterprise,lillysoftwareassociatesvisualenterprise,43231602
+SK2090,Dun and Bradstreet Global DecisionMaker,dunandbradstreetglobaldecisionmaker,43231604
+SK2092,Equifax Advanced Decisioning,equifaxadvanceddecisioning,43231604
+SK2103,Fair Isaac Capstone Decision Manager,fairisaaccapstonedecisionmanager,43231604
+SK2106,Moody's KMV Decisions,moody'skmvdecisions,43231604
+SK2107,Moody's KMV Financial Analyst,moody'skmvfinancialanalyst,43231604
+SK2127,Express Business Valuations,expressbusinessvaluations,43231604
+SK2128,Financial modeling software,financialmodelingsoftware,43231604
+SK2134,Harland Financial Solutions DecisionPro,harlandfinancialsolutionsdecisionpro,43231604
+SK2137,Innova Financial Solutions Derivatives Expert,innovafinancialsolutionsderivativesexpert,43231604
+SK2165,OptionVue Options Analysis,optionvueoptionsanalysis,43231604
+SK2167,Oracle Hyperion Financial Management,oraclehyperionfinancialmanagement,43231604
+SK2171,Peer-to-Peer Financial Analysis,"peer to peer financial analysis,peer-to-peerfinancialanalysis,peertopeer financial analysis",43231604
+SK2174,Pricing software,pricingsoftware,43231604
+SK2180,Spreadware Business Financial Analysis,spreadwarebusinessfinancialanalysis,43231604
+SK2183,SSA Global Infinium Financial Management,ssaglobalinfiniumfinancialmanagement,43231602
+SK2190,TechHackers Financial @nalyst,techhackersfinancial@nalyst,43231604
+SK2198,TradeTools Financial Market Databases,tradetoolsfinancialmarketdatabases,43232309
+SK2199,TradeTools Monthly U.S. Economic Database,"tradetools monthly u s economic database,tradetools monthly us economic database,tradetoolsmonthlyu.s.economicdatabase",43232309
+SK2206,Whitebirch Software Projected Financials,whitebirchsoftwareprojectedfinancials,43231604
+SK2210,Wolfram Research Mathematica UnRisk Pricing Engine,wolframresearchmathematicaunriskpricingengine,43231604
+SK2217,Automatic Data Processing ProxyEdge,automaticdataprocessingproxyedge,43232104
+SK2220,Cheshire Financial Planning Suite,cheshirefinancialplanningsuite,43231604
+SK2236,Financial Planning Consultants Practice Builder,financialplanningconsultantspracticebuilder,43232303
+SK2237,Financial planning presentation software,financialplanningpresentationsoftware,43232106
+SK2238,Financial Profiles Profiles+ Professional,financialprofilesprofiles+professional,43231604
+SK2239,Financial report generation software,financialreportgenerationsoftware,43232104
+SK2249,J&L Financial Planner,j&lfinancialplanner,43231604
+SK2253,MoneyTree Silver Financial Planner (financial analysis feature),moneytreesilverfinancialplanner(financialanalysisfeature),43231604
+SK2254,MoneyTree Silver Financial Planner (presentation feature),moneytreesilverfinancialplanner(presentationfeature),43232106
+SK2255,Morningstar Principia,morningstarprincipia,43231604
+SK2285,Fair Isaac Enterprise Decision Management for Insurance,fairisaacenterprisedecisionmanagementforinsurance,43231602
+SK2294,SIS SEMCI PARTNER,sissemcipartner,43231602
+SK2302,Financial compliance software,financialcompliancesoftware,43232606
+SK2303,Financial transaction analysis software,financialtransactionanalysissoftware,43231604
+SK2313,CoreLogic DebtorTrace,corelogicdebtortrace,43232306
+SK2319,Paragon Financial Services Paragon Financial System,paragonfinancialservicesparagonfinancialsystem,43231604
+SK2325,Bottom Line LoanMaster Loan Servicing,bottomlineloanmasterloanservicing,43231601
+SK2332,EDExpress,,43232306
+SK2339,Financial aid management system FAM,financialaidmanagementsystemfam,43232306
+SK2340,Financial Industry Computer Systems Loan Accountant,financialindustrycomputersystemsloanaccountant,43231601
+SK2341,Financial Industry Computer Systems Loan Originator,financialindustrycomputersystemsloanoriginator,43231604
+SK2342,Financial Industry Computer Systems Loan Producer,financialindustrycomputersystemsloanproducer,43231604
+SK2354,SunGard Higher Education Banner Financial Aid,sungardhighereducationbannerfinancialaid,43232306
+SK2358,The Mortgage Office Loan Servicing,themortgageofficeloanservicing,43231604
+SK2359,VueCentric MortgageDashboard,vuecentricmortgagedashboard,43231604
+SK2361,Wolters Kluwer Financial Services ComplianceOne,wolterskluwerfinancialservicescomplianceone,43232606
+SK2365,ACI TaskTracker,acitasktracker,43231507
+SK2366,Creative Solutions CPA Depreciation,creativesolutionscpadepreciation,43231603
+SK2398,Amazon Web Services AWS CloudFormation,amazonwebservicesawscloudformation,43232806
+SK2412,Electronic design automation EDA software,electronicdesignautomationedasoftware,43232604
+SK2416,Hierarchical simulation program with integrated circuit emphasis HSPICE,hierarchicalsimulationprogramwithintegratedcircuitemphasishspice,43232605
+SK2438,Oracle Java 2 Platform Enterprise Edition J2EE,oraclejava2platformenterpriseeditionj2ee,43232402
+SK2462,Spring Boot,springboot,43232701
+SK2487,Bizmatics PrognoCIS EMR,bizmaticsprognocisemr,43232610
+SK2492,Computerized physician order entry CPOE software,computerizedphysicianorderentrycpoesoftware,43232610
+SK2497,MEDITECH Healthcare Information System HCIS,meditechhealthcareinformationsystemhcis,43232610
+SK2504,Picis CareSuite,piciscaresuite,43232610
+SK2569,Security incident management software,securityincidentmanagementsoftware,43233203
+SK2629,Cisco Systems Cisco NetFlow Collection Engine,ciscosystemscisconetflowcollectionengine,43232801
+SK2630,Cisco Systems Cisco Traffic Analyzer,ciscosystemsciscotrafficanalyzer,43232801
+SK2631,Cisco Systems CiscoWorks LAN Management Solution,ciscosystemsciscoworkslanmanagementsolution,43232804
+SK2639,EMC Ionix Network Configuration Manager,emcionixnetworkconfigurationmanager,43232401
+SK2646,Hewlett-Packard HP Network Node Manager,"hewlett packard hp network node manager,hewlett-packardhpnetworknodemanager,hewlettpackard hp network node manager",43232804
+SK2691,Lucid IQ CMP,lucidiqcmp,43232306
+SK2707,Capacity planning software,capacityplanningsoftware,43232407
+SK2708,Cisco Systems Cisco Web Cache Communication Protocol WCCP,ciscosystemsciscowebcachecommunicationprotocolwccp,43232908
+SK2709,Cisco Systems Gateway Load Balancing Protocol GLBP,ciscosystemsgatewayloadbalancingprotocolglbp,43232908
+SK2710,Cisco Systems Hot Standby Router Protocol HSRP,ciscosystemshotstandbyrouterprotocolhsrp,43232908
+SK2711,Cisco Systems Wireless Control System WCS,ciscosystemswirelesscontrolsystemwcs,43232804
+SK2712,Citrix XenApp,citrixxenapp,43232701
+SK2714,Computer Associates ArcServ Backup,computerassociatesarcservbackup,43233415
+SK2756,Oracle Java Enterprise Edition EE,oraclejavaenterpriseeditionee,43232402
+SK2758,Packet tracing software,packettracingsoftware,43232801
+SK2769,Symantec Intruder Alert,symantecintruderalert,43232801
+SK2800,Computer Associates Log Analyzer,computerassociatesloganalyzer,43232406
+SK2810,Database capacity planning software,databasecapacityplanningsoftware,43232407
+SK2816,Ellucian Banner ERP,ellucianbannererp,43231602
+SK2822,IBM Interactive System Productivity Facility ISPF,ibminteractivesystemproductivityfacilityispf,43232304
+SK2831,Oracle Application Express APEX,oracleapplicationexpressapex,43232408
+SK2880,Multidimensional Expressions MDX,multidimensionalexpressionsmdx,43232304
+SK2906,ParAccel Analytic Database,paraccelanalyticdatabase,43232304
+SK2948,Beginner's all-purpose symbolic instruction code BASIC,"beginner's all purpose symbolic instruction code basic,beginner's allpurpose symbolic instruction code basic,beginner'sall-purposesymbolicinstructioncodebasic",43232402
+SK2960,Computer Associates integrated data management system CA-IDMS,"computer associates integrated data management system ca idms,computer associates integrated data management system caidms,computerassociatesintegrateddatamanagementsystemca-idms",43232304
+SK3001,Simulation program with integrated circuit emphasis SPICE,simulationprogramwithintegratedcircuitemphasisspice,43232605
+SK3006,Symbolic debugger software,symbolicdebuggersoftware,43232406
+SK3011,Xerces2 Java Parser,xerces2javaparser,43232402
+SK3023,GitLab,,43232701
+SK3031,JavaScript framework software,javascriptframeworksoftware,43232408
+SK3032,Jenkins CI,jenkinsci,43232403
+SK3048,React Native,reactnative,43232408
+SK3049,React Redux,reactredux,43232408
+SK3058,Sun Microsystems Java Persistence API,sunmicrosystemsjavapersistenceapi,43232405
+SK3059,TypeScript,,43232405
+SK3061,Vue.js,"vue,vue js,vuejs",43232408
+SK3094,YourKit Java Profiler,yourkitjavaprofiler,43232406
+SK3118,3D graphic design software,3dgraphicdesignsoftware,43232102
+SK3125,Microsoft Expression Blend,microsoftexpressionblend,43232404
+SK3145,Sun Microsystems Java Servlet API,sunmicrosystemsjavaservletapi,43232405
+SK3161,ESRI ArcIMS,esriarcims,43232510
+SK3167,National Land Cover Database NLCD,nationallandcoverdatabasenlcd,43232306
+SK3173,Sun Microsystems Java,sunmicrosystemsjava,43232405
+SK3183,Conarc iChannel,conarcichannel,43232202
+SK3186,Doc.It DM,"doc it dm,doc.itdm,docit dm",43232202
+SK3191,EMC Document Sciences xPression,emcdocumentsciencesxpression,43232202
+SK3207,Objective Electronic Document Management,objectiveelectronicdocumentmanagement,43232202
+SK3216,SAP ERP Financials,saperpfinancials,43231602
+SK3234,IBM Resource Access Control Facility RACF,ibmresourceaccesscontrolfacilityracf,43233203
+SK3284,Digital Crew Teamwork Project Manager,digitalcrewteamworkprojectmanager,43231507
+SK3287,easyCIS,,43232402
+SK3307,JetBrains Team City,jetbrainsteamcity,43232402
+SK3324,Objective Decision Contactizer Pro,objectivedecisioncontactizerpro,43232306
+SK3343,Sciforma,,43231507
+SK3398,MacKichan Software Scientific WorkPlace,mackichansoftwarescientificworkplace,43232605
+SK3446,Scientific Software International SSI Hierarchical Linear and Non-Linear Modeling HLM,"scientific software international ssi hierarchical linear and non linear modeling hlm,scientific software international ssi hierarchical linear and nonlinear modeling hlm,scientificsoftwareinternationalssihierarchicallinearandnon-linearmodelinghlm",43232605
+SK3447,Scientific Software International SSI LISREL,scientificsoftwareinternationalssilisrel,43232605
+SK3462,Amazon Web Services AWS SageMaker,amazonwebservicesawssagemaker,43232806
+SK3465,Flask,,43232402
+SK3477,Scikit-learn,"scikit learn,scikitlearn",43232402
+SK3478,SciPy,,43232405
+SK3507,Thermo Fisher Scientific Ion Reporter,thermofisherscientificionreporter,43232605
+SK3509,1ST Pricing Window & Door Toolkit,1stpricingwindow&doortoolkit,43231503
+SK3518,Craftsman CD Estimator,craftsmancdestimator,43231507
+SK3541,Boeing Kork Digital Mapping,boeingkorkdigitalmapping,43232605
+SK3545,Digital databases,digitaldatabases,43232309
+SK3546,Digital mapping software,digitalmappingsoftware,43233506
+SK3555,Master Seafloor Digital Database,masterseafloordigitaldatabase,43232309
+SK3557,Precision analytical aerotriangulation pugging software,precisionanalyticalaerotriangulationpuggingsoftware,43233506
+SK3559,Rand McNally World Digital Database,randmcnallyworlddigitaldatabase,43232309
+SK3574,Crones & Associations Project Tracker Pro,crones&associationsprojecttrackerpro,43231507
+SK3593,Topographic database software,topographicdatabasesoftware,43232309
+SK3598,Carlson Civil Suite,carlsoncivilsuite,43232604
+SK3599,Carlson Simplicity Sight Survey,carlsonsimplicitysightsurvey,43232605
+SK3624,Digital Equipment Corporation DIGITAL Fortran 90,digitalequipmentcorporationdigitalfortran90,43232402
+SK3633,K&K Associates Thermal Analysis Kit TAK,k&kassociatesthermalanalysiskittak,43232605
+SK3659,Bioreactor Design,bioreactordesign,43232604
+SK3660,Cadence Allegro Design Entry Capture and Capture CIS,cadenceallegrodesignentrycaptureandcapturecis,43232604
+SK3665,Circuit simulation software,circuitsimulationsoftware,43232605
+SK3692,Lucidchart,,43231518
+SK3707,Schematic design entry software,schematicdesignentrysoftware,43232604
+SK3723,CD-adapco STAR-CAD,"cd adapco star cad,cd-adapcostar-cad,cdadapco starcad",43232604
+SK3747,Bentley Haestad Methods CivilStorm,bentleyhaestadmethodscivilstorm,43232604
+SK3762,Bentley GEOPAK Civil Engineering Suite,bentleygeopakcivilengineeringsuite,43232604
+SK3763,Citilabs Cube,citilabscube,43232605
+SK3784,Application-specific integrated circuit ASIC logic synthesis software,"application specific integrated circuit asic logic synthesis software,application-specificintegratedcircuitasiclogicsynthesissoftware,applicationspecific integrated circuit asic logic synthesis software",43232605
+SK3800,Cadence Virtuoso Spectre Circuit Simulator,cadencevirtuosospectrecircuitsimulator,43232605
+SK3812,Integrated circuit simulation software,integratedcircuitsimulationsoftware,43232605
+SK3825,Mentor Graphics Precision RTL,mentorgraphicsprecisionrtl,43232605
+SK3829,PCI Express PCIe,pciexpresspcie,43232306
+SK3841,Synplicity Synplify,synplicitysynplify,43232605
+SK3852,Very high speed integrated circuit VHSIC hardware description language VHDL simulation software,veryhighspeedintegratedcircuitvhsichardwaredescriptionlanguagevhdlsimulationsoftware,43232605
+SK3853,Very high-speed integrated circuit VHSIC hardware description language VHDL,"very high speed integrated circuit vhsic hardware description language vhdl,very highspeed integrated circuit vhsic hardware description language vhdl,veryhigh-speedintegratedcircuitvhsichardwaredescriptionlanguagevhdl",43232402
+SK3858,Advanced boolean expression language ABEL,advancedbooleanexpressionlanguageabel,43232402
+SK3865,Digital timing diagram editing software,digitaltimingdiagrameditingsoftware,43232605
+SK3883,Microwave circuit simulation software,microwavecircuitsimulationsoftware,43232605
+SK3887,Printed circuit board design software,printedcircuitboarddesignsoftware,43232604
+SK3923,Fugitive emission leak detection software,fugitiveemissionleakdetectionsoftware,43232608
+SK3941,Anthropometric databases,anthropometricdatabases,43232306
+SK3955,Incident tracking software,incidenttrackingsoftware,43232306
+SK3980,Computational Dynamics STAR-CD,"computational dynamics star cd,computational dynamics starcd,computationaldynamicsstar-cd",43232604
+SK4007,Assembly line balancing software,assemblylinebalancingsoftware,43232608
+SK4008,Automatic dynamic incremental nonlinear analysis ADINA,automaticdynamicincrementalnonlinearanalysisadina,43232605
+SK4011,Decision support software,decisionsupportsoftware,43231511
+SK4017,Facilities design software,facilitiesdesignsoftware,43232604
+SK4018,Facilities planning software,facilitiesplanningsoftware,43232604
+SK4024,Manhattan Associates PkMS Pickticket,manhattanassociatespkmspickticket,43231508
+SK4040,Supply chain capacity planning software,supplychaincapacityplanningsoftware,43231506
+SK4046,AEMC DataView,aemcdataview,43232605
+SK4061,Cadence Incisive Enterprise Simulator,cadenceincisiveenterprisesimulator,43232605
+SK4062,Cadence Incisive Enterprise Specman Elite Testbench,cadenceincisiveenterprisespecmanelitetestbench,43232605
+SK4069,Synopsys electronic design software,synopsyselectronicdesignsoftware,43232605
+SK4091,Digital image correlation DIC software,digitalimagecorrelationdicsoftware,43232605
+SK4108,Lambda Research OSLO,lambdaresearchoslo,43232604
+SK4181,Reactor excursion and release analysis program RELAP,reactorexcursionandreleaseanalysisprogramrelap,43232605
+SK4183,Scientech Safety Monitor,scientechsafetymonitor,43232605
+SK4184,Scientech WinNUPRA,scientechwinnupra,43232605
+SK4186,Transient reactor analysis code TRAC,transientreactoranalysiscodetrac,43232605
+SK4198,TERRASCIENCES TerraStation,terrasciencesterrastation,43232605
+SK4213,Energy Efficient Rehab Advisor,energyefficientrehabadvisor,43232605
+SK4216,Facility Energy Decision Systems FEDS,facilityenergydecisionsystemsfeds,43232605
+SK4220,Home Energy Efficient Design HEED,homeenergyefficientdesignheed,43232604
+SK4278,Synopsys Taurus Medici,synopsystaurusmedici,43232605
+SK4283,Xcircuit,,43232604
+SK4284,Adept Scientific GRAMS,adeptscientificgrams,43232605
+SK4288,Optical Research Associates LightTools,opticalresearchassociateslighttools,43232604
+SK4312,Video digitizers,videodigitizers,43232103
+SK4314,AWS Elastic MapReduce (EMR),awselasticmapreduce(emr),43232314
+SK4339,Schneider Electric Direct Coordination,schneiderelectricdirectcoordination,43232605
+SK4352,Python Tools for Visual Studio (PTVS),pythontoolsforvisualstudio(ptvs),43232405
+SK4372,Digitizing and photogrammetric software,digitizingandphotogrammetricsoftware,43232111
+SK4376,Logitech 3D Pro,logitech3dpro,43232604
+SK4383,Specification software,specificationsoftware,43232104
+SK4394,Design specification database software,designspecificationdatabasesoftware,43232306
+SK4412,Digital terrain modeling software,digitalterrainmodelingsoftware,43233506
+SK4431,Motorola Digital Signal Processing (DSP) Assembler,motoroladigitalsignalprocessing(dsp)assembler,43232402
+SK4472,Logic Design RoboLogix,logicdesignrobologix,43232605
+SK4475,Microscopic image capturing software,microscopicimagecapturingsoftware,43232605
+SK4477,Scientific Software Group MIGRATE,scientificsoftwaregroupmigrate,43232605
+SK4483,Artificial intelligence software,artificialintelligencesoftware,43232608
+SK4485,Cimatron computer-aided design and manufacturing software,"cimatron computer aided design and manufacturing software,cimatron computeraided design and manufacturing software,cimatroncomputer-aideddesignandmanufacturingsoftware",43232612
+SK4490,Geometric dimensioning and tolerancing software,geometricdimensioningandtolerancingsoftware,43232605
+SK4511,Three-dimensional parametric design software,"three dimensional parametric design software,three-dimensionalparametricdesignsoftware,threedimensional parametric design software",43232604
+SK4515,Wilcox Associates PC-DMIS,"wilcox associates pc dmis,wilcox associates pcdmis,wilcoxassociatespc-dmis",43232605
+SK4533,Visualization Sciences Group VSG Avizo Fire,visualizationsciencesgroupvsgavizofire,43232605
+SK4534,Visualization Sciences Group VSG Open Inventor,visualizationsciencesgroupvsgopeninventor,43232102
+SK4543,Desktop digital photogrammetry system DDPS,desktopdigitalphotogrammetrysystemddps,43233506
+SK4544,Digital elevation model DEM software,digitalelevationmodeldemsoftware,43232605
+SK4546,ESRI ArcGIS (analytical or scientific feature),esriarcgis(analyticalorscientificfeature),43232510
+SK4551,Foresoft CDS Cogo,foresoftcdscogo,43232605
+SK4552,Foresoft CDS Model,foresoftcdsmodel,43232605
+SK4561,PCI Geomatics eCognition,pcigeomaticsecognition,43232301
+SK4562,PCI Geomatics software,pcigeomaticssoftware,43232605
+SK4564,Trimble Digital Fieldbook,trimbledigitalfieldbook,43233506
+SK4577,Deoxyribonucleic acid DNA sequence analysis software,deoxyribonucleicaciddnasequenceanalysissoftware,43232605
+SK4617,Chang Bioscience ToolKit,changbiosciencetoolkit,43232605
+SK4625,Expression DNA and protein sequence software,expressiondnaandproteinsequencesoftware,43232605
+SK4637,Macroscopic diffusion software,macroscopicdiffusionsoftware,43232605
+SK4651,Yet another scientific artificial reality application YASARA software,yetanotherscientificartificialrealityapplicationyasarasoftware,43232605
+SK4653,BD Biosciences CellQuest,bdbiosciencescellquest,43232605
+SK4654,BD Biosciences CloneCyt,bdbiosciencesclonecyt,43232605
+SK4691,DNA sequencing software,dnasequencingsoftware,43232605
+SK4694,Genedata Expressionist,genedataexpressionist,43232605
+SK4700,Public genomic databases,publicgenomicdatabases,43232605
+SK4701,RNA sequencing software,rnasequencingsoftware,43232605
+SK4702,Roche 454 Life Sciences GS Data Analysis,roche454lifesciencesgsdataanalysis,43232605
+SK4711,Deoxyribonucleic acid DNA libraries,deoxyribonucleicaciddnalibraries,43232306
+SK4768,Water Soil and Hydro-Environmental Decision Support System WATERSHEDSS,"water soil and hydro environmental decision support system watershedss,water soil and hydroenvironmental decision support system watershedss,watersoilandhydro-environmentaldecisionsupportsystemwatershedss",43232605
+SK4803,Centers for Disease Control and Prevention CDC WONDER,centersfordiseasecontrolandpreventioncdcwonder,43232306
+SK4805,Circle Systems Stat/Transfer,"circle systems stat,circlesystemsstat/transfer,transfer",43232605
+SK4821,Medical Scientists HybridAI,medicalscientistshybridai,43232605
+SK4822,Medical Scientists MediSave,medicalscientistsmedisave,43232605
+SK4844,Software Bisque CCDSoft,softwarebisqueccdsoft,43232605
+SK4863,SciGraphica,,43232605
+SK4864,SciLab,,43232605
+SK4867,SQLite,,43232304
+SK4873,Advanced Visual Systems AVS/Express,"advanced visual systems avs,advancedvisualsystemsavs/express,express",43232102
+SK4877,Baron Volumetric Imaging and Processing of Integrated Radar VIPIR,baronvolumetricimagingandprocessingofintegratedradarvipir,43232605
+SK4893,Unidata McIDAS-X,"unidata mcidas x,unidata mcidasx,unidatamcidas-x",43232605
+SK4899,Accelrys DeCipher,accelrysdecipher,43232605
+SK4900,Advanced Chemistry Development ACD/1D nuclear magnetic resonance NMR processor,"1d nuclear magnetic resonance nmr processor,advanced chemistry development acd,advancedchemistrydevelopmentacd/1dnuclearmagneticresonancenmrprocessor",43232605
+SK4908,ChemSW Chemical Inventory System CIS,chemswchemicalinventorysystemcis,43231508
+SK4916,Digital imaging software,digitalimagingsoftware,43232102
+SK4927,Network Science IR Mentor Pro,networkscienceirmentorpro,43232605
+SK4930,SciQuest PE TurboChrom,sciquestpeturbochrom,43232605
+SK4934,Vogel Scientific Software Group CALACO,vogelscientificsoftwaregroupcalaco,43232605
+SK4944,International Centre for Diffraction Data ICDD DDView,internationalcentrefordiffractiondataicddddview,43232306
+SK4984,Unidata Network common data form NetCDF,unidatanetworkcommondataformnetcdf,43232402
+SK4986,Economic Input-Output Life Cycle Assessment EIO-LCA,"economic input output life cycle assessment eio lca,economic inputoutput life cycle assessment eiolca,economicinput-outputlifecycleassessmenteio-lca",43232605
+SK4991,ACD Systems Canvas,acdsystemscanvas,43232102
+SK5026,MHC Document Express,mhcdocumentexpress,43232202
+SK5064,Scientific Software Group FEFLOW,scientificsoftwaregroupfeflow,43232605
+SK5065,Scientific Software Group Infinite Extent,scientificsoftwaregroupinfiniteextent,43232605
+SK5066,Scientific Software Group SVHeat,scientificsoftwaregroupsvheat,43232605
+SK5068,Seismic interpretation software,seismicinterpretationsoftware,43232605
+SK5072,Socorro Scientific Software Refract2K,socorroscientificsoftwarerefract2k,43232605
+SK5115,Scientific Software Group 3DFATMIC,scientificsoftwaregroup3dfatmic,43232604
+SK5116,Scientific Software Group 3DFEMFAT,scientificsoftwaregroup3dfemfat,43232604
+SK5117,Scientific Software Group AQUA3D,scientificsoftwaregroupaqua3d,43232605
+SK5118,Scientific Software Group AquaDyn,scientificsoftwaregroupaquadyn,43232605
+SK5119,Scientific Software Group AQUASEA,scientificsoftwaregroupaquasea,43232605
+SK5120,Scientific Software Group Aquifer win32,scientificsoftwaregroupaquiferwin32,43232605
+SK5121,Scientific Software Group AQUIPACK,scientificsoftwaregroupaquipack,43232605
+SK5122,Scientific Software Group AT123D,scientificsoftwaregroupat123d,43232605
+SK5123,Scientific Software Group BIO1D,scientificsoftwaregroupbio1d,43232605
+SK5124,Scientific Software Group BIOF&T,scientificsoftwaregroupbiof&t,43232605
+SK5125,Scientific Software Group BIOSLURP,scientificsoftwaregroupbioslurp,43232605
+SK5126,Scientific Software Group BioTrends,scientificsoftwaregroupbiotrends,43232605
+SK5127,Scientific Software Group CHASM,scientificsoftwaregroupchasm,43232605
+SK5128,Scientific Software Group ChemGraph,scientificsoftwaregroupchemgraph,43232306
+SK5129,Scientific Software Group DTM,scientificsoftwaregroupdtm,43233506
+SK5130,Scientific Software Group Enviro-Base Pro,"scientific software group enviro base pro,scientific software group envirobase pro,scientificsoftwaregroupenviro-basepro",43232306
+SK5131,Scientific Software Group EnviroScape,scientificsoftwaregroupenviroscape,43232605
+SK5132,Scientific Software Group EVS,scientificsoftwaregroupevs,43232604
+SK5133,Scientific Software Group Filter Drain FD,scientificsoftwaregroupfilterdrainfd,43232605
+SK5134,Scientific Software Group GFLOW,scientificsoftwaregroupgflow,43232605
+SK5135,Scientific Software Group HydroGeo Analyst,scientificsoftwaregrouphydrogeoanalyst,43232605
+SK5136,Scientific Software Group HYDROGEOCHEM,scientificsoftwaregrouphydrogeochem,43232605
+SK5137,Scientific Software Group MARS 2-D/3-D,"3-d,scientific software group mars 2 d/3 d,scientific software group mars 2-d,scientific software group mars 2d/3d,scientificsoftwaregroupmars2-d/3-d",43232605
+SK5138,Scientific Software Group MIDUSS,scientificsoftwaregroupmiduss,43232605
+SK5139,Scientific Software Group MINTEQA2,scientificsoftwaregroupminteqa2,43232605
+SK5140,Scientific Software Group MOCDENSE,scientificsoftwaregroupmocdense,43232605
+SK5141,Scientific Software Group MODFLOWT,scientificsoftwaregroupmodflowt,43232605
+SK5142,Scientific Software Group MODPUMP,scientificsoftwaregroupmodpump,43232605
+SK5143,Scientific Software Group MODRET,scientificsoftwaregroupmodret,43232605
+SK5144,Scientific Software Group MOFAT,scientificsoftwaregroupmofat,43232605
+SK5145,Scientific Software Group MohrView,scientificsoftwaregroupmohrview,43232605
+SK5146,Scientific Software Group MOVER,scientificsoftwaregroupmover,43232605
+SK5147,Scientific Software Group MS-VMS,"scientific software group ms vms,scientific software group msvms,scientificsoftwaregroupms-vms",43232605
+SK5148,Scientific Software Group MT3D99,scientificsoftwaregroupmt3d99,43232605
+SK5149,Scientific Software Group OILVOL,scientificsoftwaregroupoilvol,43232605
+SK5150,Scientific Software Group POLLUTE,scientificsoftwaregrouppollute,43232605
+SK5151,Scientific Software Group QHM,scientificsoftwaregroupqhm,43232605
+SK5152,Scientific Software Group QuickSoil,scientificsoftwaregroupquicksoil,43232605
+SK5153,Scientific Software Group RISC WorkBench,scientificsoftwaregroupriscworkbench,43232605
+SK5154,Scientific Software Group RMT,scientificsoftwaregrouprmt,43233506
+SK5155,Scientific Software Group SEQUENCE,scientificsoftwaregroupsequence,43232605
+SK5156,Scientific Software Group SESOIL,scientificsoftwaregroupsesoil,43232605
+SK5157,Scientific Software Group SLAEM/MLAEM,"mlaem,scientific software group slaem,scientificsoftwaregroupslaem/mlaem",43232605
+SK5158,Scientific Software Group Soil Vapor Extraction BioSVE,scientificsoftwaregroupsoilvaporextractionbiosve,43232605
+SK5159,Scientific Software Group SOILPARA,scientificsoftwaregroupsoilpara,43232605
+SK5160,Scientific Software Group SOLUTRANS,scientificsoftwaregroupsolutrans,43232605
+SK5161,Scientific Software Group StepMaster,scientificsoftwaregroupstepmaster,43232605
+SK5162,Scientific Software Group SURF,scientificsoftwaregroupsurf,43233506
+SK5163,Scientific Software Group SVFlux,scientificsoftwaregroupsvflux,43232605
+SK5164,Scientific Software Group TUFLOW,scientificsoftwaregrouptuflow,43232605
+SK5165,Scientific Software Group VAM2D,scientificsoftwaregroupvam2d,43232605
+SK5166,Scientific Software Group WinFlow,scientificsoftwaregroupwinflow,43232605
+SK5167,Scientific Software Group WinTran,scientificsoftwaregroupwintran,43232605
+SK5168,Scientific Software GroupWHI UnSAT Suite,scientificsoftwaregroupwhiunsatsuite,43232306
+SK5169,Scientific Software GroupWinFence,scientificsoftwaregroupwinfence,43232605
+SK5174,Vieux & Associates Vflow,vieux&associatesvflow,43232605
+SK5189,PCI Geomatics Geomatica,pcigeomaticsgeomatica,43233506
+SK5195,MacKichan Software Scientific Notebook,mackichansoftwarescientificnotebook,43232605
+SK5218,Gamma Associates mTab,gammaassociatesmtab,43232306
+SK5219,Gravic Principia Remark,gravicprincipiaremark,43232306
+SK5228,Power and Precision,powerandprecision,43232605
+SK5232,Pulse Train Bellview TCI,pulsetrainbellviewtci,43232306
+SK5254,TURBO Spring-Stat,"turbo spring stat,turbo springstat,turbospring-stat",43232605
+SK5261,Scientific Software International BILOG-MG,"scientific software international bilog mg,scientific software international bilogmg,scientificsoftwareinternationalbilog-mg",43232605
+SK5262,Scientific Software International HLM,scientificsoftwareinternationalhlm,43232605
+SK5263,Scientific Software International LISREL,scientificsoftwareinternationallisrel,43232605
+SK5264,Scientific Software International MULTILOG,scientificsoftwareinternationalmultilog,43232605
+SK5265,Scientific Software International PARSCALE,scientificsoftwareinternationalparscale,43232605
+SK5266,Scientific Software International TESTFACT,scientificsoftwareinternationaltestfact,43232605
+SK5272,BlackHawk Canyon Publishers PracticianWorks,blackhawkcanyonpublisherspracticianworks,43232610
+SK5279,DocuTrac QuicDoc,docutracquicdoc,43232610
+SK5287,Medicine Rules PowerSEAT 360,medicinerulespowerseat360,43232610
+SK5351,Citilabs TRANPLAN,citilabstranplan,43232605
+SK5354,e-on VUE,"e on vue,e-onvue,eon vue",43232604
+SK5355,ITC Integrated Land and Water Information System ILWIS,itcintegratedlandandwaterinformationsystemilwis,43233506
+SK5358,Location allocation decision support system LADSS,locationallocationdecisionsupportsystemladss,43232605
+SK5360,PlanGraphics Citywide GIS Utility,plangraphicscitywidegisutility,43232510
+SK5363,Scientific Software Group ModTech,scientificsoftwaregroupmodtech,43232605
+SK5364,Spatial decision support systems SDSS software,spatialdecisionsupportsystemssdsssoftware,43233506
+SK5371,Apple Final Cut Express,applefinalcutexpress,43232103
+SK5396,Digital image collections,digitalimagecollections,43232309
+SK5399,Library of Congress digital collections,libraryofcongressdigitalcollections,43232309
+SK5406,Smithsonian Institution digital archives,smithsonianinstitutiondigitalarchives,43232309
+SK5414,EBSCO Publishing Political Science Complete,ebscopublishingpoliticalsciencecomplete,43232309
+SK5419,Interuniversity Consortium for Political and Social Research (ICPSR) database,interuniversityconsortiumforpoliticalandsocialresearch(icpsr)database,43232306
+SK5425,ProQuest Worldwide Political Science Abstracts,proquestworldwidepoliticalscienceabstracts,43232309
+SK5429,Dowling Associates TRAFFIX,dowlingassociatestraffix,43232605
+SK5450,Scientific analysis software,scientificanalysissoftware,43232605
+SK5457,Parallel Geoscience SPW,parallelgeosciencespw,43232605
+SK5470,REDCap Research Electronic Data Capture,redcapresearchelectronicdatacapture,43232605
+SK5490,Automated Biometric Identification System ABIS,automatedbiometricidentificationsystemabis,43232306
+SK5497,National Crime Information Center (NCIC) database,nationalcrimeinformationcenter(ncic)database,43232306
+SK5501,Trancite Logic Systems ScenePD,trancitelogicsystemsscenepd,43232102
+SK5515,GeoCue PointVue LE,geocuepointvuele,43232605
+SK5528,Industrial Scientific iNET,industrialscientificinet,43232608
+SK5551,Career decision-making programs,"career decision making programs,career decisionmaking programs,careerdecision-makingprograms",43232306
+SK5570,Social Solutions ETO,socialsolutionseto,43232306
+SK5611,Social Work Software ClientTouch,socialworksoftwareclienttouch,43232610
+SK5646,Computer Sciences Corporation Legal Solutions Suite,computersciencescorporationlegalsolutionssuite,43232306
+SK5656,Customer Expressions i-Sight,"customer expressions i sight,customer expressions isight,customerexpressionsi-sight",43231507
+SK5664,eLawSoftware,,43232306
+SK5689,LexisNexis Shepard's Citations Service,lexisnexisshepard'scitationsservice,43232309
+SK5702,Solution Specialties TRACKER,solutionspecialtiestracker,43232306
+SK5737,Appligent Citation FDFMerge,appligentcitationfdfmerge,43232202
+SK5746,Digital contract software,digitalcontractsoftware,43232112
+SK5748,Electronic discovery software,electronicdiscoverysoftware,43232605
+SK5754,Inmagic DB/TextWorks,"inmagic db,inmagicdb/textworks,textworks",43232202
+SK5759,LexisNexis CheckCite,lexisnexischeckcite,43232104
+SK5789,Geographic information system GIS databases,geographicinformationsystemgisdatabases,43232510
+SK5795,Almaris E-Learning Systems Financial Accounting Tutor,"almaris e learning systems financial accounting tutor,almaris elearning systems financial accounting tutor,almarise-learningsystemsfinancialaccountingtutor",43232502
+SK5824,Ikon Science RokDoc,ikonsciencerokdoc,43232605
+SK5828,Platte River Associates BasinMod,platteriverassociatesbasinmod,43232605
+SK5849,Digitizing software,digitizingsoftware,43232111
+SK5854,Python Experimental Economics Toolkit PEET,pythonexperimentaleconomicstoolkitpeet,43232605
+SK5882,Social network analysis software,socialnetworkanalysissoftware,43232605
+SK5885,TechSmith Snagit,techsmithsnagit,43232102
+SK5891,Association for Computing Machinery Digital Library,associationforcomputingmachinerydigitallibrary,43232306
+SK5894,EBSCO Information Services Library Literature and Information Science Index,ebscoinformationserviceslibraryliteratureandinformationscienceindex,43232609
+SK5895,"EBSCO Library, Information Science, and Technology Abstracts LISTSA","ebscolibrary,informationscience,andtechnologyabstractslistsa",43232609
+SK5897,Elsevier ScienceDirect,elseviersciencedirect,43232609
+SK5899,Gale Cengage Learning Associations Unlimited,galecengagelearningassociationsunlimited,43232306
+SK5902,OCLC ILLiad,oclcilliad,43232609
+SK5903,Online Dictionary for Library and Information Science ODLIS,onlinedictionaryforlibraryandinformationscienceodlis,43232609
+SK5906,ProQuest Library and Information Science Abstracts LISA,proquestlibraryandinformationscienceabstractslisa,43232609
+SK5907,Social networking platforms,socialnetworkingplatforms,43232107
+SK5908,Thomson Reuters Web of Science,thomsonreuterswebofscience,43232609
+SK5932,Audacity,,43232005
+SK5947,Social computing tools,socialcomputingtools,43232107
+SK5961,Scientific Learning Fast ForWord,scientificlearningfastforword,43232502
+SK5980,Cuadra Associates STAR/Museums,"cuadra associates star,cuadraassociatesstar/museums,museums",43232306
+SK5982,Ex Libris Group DigiTool,exlibrisgroupdigitool,43232306
+SK5988,Re:discovery Software Proficio,re:discoverysoftwareproficio,43232306
+SK5990,Willoughby Associates MIMSY XG,willoughbyassociatesmimsyxg,43232306
+SK5991,Questor Systems QScan32,questorsystemsqscan32,43232306
+SK5996,Dynix Digital Library,dynixdigitallibrary,43232609
+SK6009,National Library of Medicine DOCLINE,nationallibraryofmedicinedocline,43232609
+SK6010,National Library of Medicine Medline,nationallibraryofmedicinemedline,43232306
+SK6020,Thomson Scientific Dialog,thomsonscientificdialog,43232306
+SK6030,Elucidat,,43232102
+SK6036,Performance Technology Associates DocuTools,performancetechnologyassociatesdocutools,43232112
+SK6046,Special Education Student Information System SESIS,specialeducationstudentinformationsystemsesis,43232306
+SK6050,Maxon Cinema 4D,maxoncinema4d,43232103
+SK6054,DRAWSTITCH Artistic Sewing Suite,drawstitchartisticsewingsuite,43232604
+SK6097,e-on software Vue,"e on software vue,e-onsoftwarevue,eon software vue",43232102
+SK6111,Microsoft Expression Design,microsoftexpressiondesign,43232102
+SK6114,NodeBox,,43232102
+SK6125,Skencil,,43232102
+SK6142,C-DESIGN Fashion,"c design fashion,c-designfashion,cdesign fashion",43232604
+SK6148,StartingAClothingLine.com Digital Fashion Pro,"startingaclothingline com digital fashion pro,startingaclothingline.comdigitalfashionpro,startingaclothinglinecom digital fashion pro",43232604
+SK6183,The Associated Press ENPS,theassociatedpressenps,43232103
+SK6211,Epinoisis Software Digital Ear,epinoisissoftwaredigitalear,43232005
+SK6219,Javamin Composer,javamincomposer,43232005
+SK6234,Music Director Pro,musicdirectorpro,43232306
+SK6236,MusicDevelopments RapidComposer,musicdevelopmentsrapidcomposer,43232005
+SK6271,Financial tracking software,financialtrackingsoftware,43231601
+SK6276,Dalet Digital Media Systems Dalet Media Life,daletdigitalmediasystemsdaletmedialife,43231602
+SK6281,RCS NexGen Digital,rcsnexgendigital,43232603
+SK6284,Cision CisionPoint,cisioncisionpoint,43232306
+SK6291,CCI NewsGate,ccinewsgate,43232107
+SK6331,Electronic dictionaries,electronicdictionaries,43232507
+SK6357,Stenovations Digital CAT,stenovationsdigitalcat,43232104
+SK6363,Musical instrument digital interface MIDI software,musicalinstrumentdigitalinterfacemidisoftware,43232005
+SK6380,DaVinci Resolve,davinciresolve,43232103
+SK6391,BioEx Systems Exercise Pro,bioexsystemsexercisepro,43232610
+SK6417,Dental digital radiology software,dentaldigitalradiologysoftware,43232610
+SK6443,DecisionBase TiME for OMS,decisionbasetimeforoms,43232610
+SK6447,Kodak Dental Systems Kodak Cosmetic Imaging Module,kodakdentalsystemskodakcosmeticimagingmodule,43232102
+SK6458,GAC International OrthoPlex,gacinternationalorthoplex,43232102
+SK6460,IMS Specialty Services IMS Digital Office,imsspecialtyservicesimsdigitaloffice,43232610
+SK6479,Allergenic diet software,allergenicdietsoftware,43232605
+SK6502,Digital Healthcare OptoMize,digitalhealthcareoptomize,43232610
+SK6506,Insight Software My Vision Express,insightsoftwaremyvisionexpress,43232610
+SK6513,VisionScience Software Acuity Pro,visionsciencesoftwareacuitypro,43232610
+SK6525,Patient records software for personal digital assistants PDAs,patientrecordssoftwareforpersonaldigitalassistantspdas,43233414
+SK6529,Automatic Data Processing AdvancedMD EHR,automaticdataprocessingadvancedmdehr,43232610
+SK6534,GE Healthcare Centricity Practice Solution,gehealthcarecentricitypracticesolution,43232610
+SK6540,Modernizing Medicine Practice Management,modernizingmedicinepracticemanagement,43232610
+SK6563,Science educational software,scienceeducationalsoftware,43232502
+SK6564,Social studies educational software,socialstudieseducationalsoftware,43232502
+SK6565,Special education educational software,specialeducationeducationalsoftware,43232502
+SK6576,Freedom Scientific MAGic,freedomscientificmagic,43233405
+SK6581,Clinicient Insight,clinicientinsight,43232610
+SK6582,Exercise routine creation software,exerciseroutinecreationsoftware,43232104
+SK6610,Propeller Multimedia React2,propellermultimediareact2,43232610
+SK6615,American Data Systems PAWS Veterinary Practice Management,americandatasystemspawsveterinarypracticemanagement,43232610
+SK6640,Controlled Oral Word Association Task,controlledoralwordassociationtask,43232610
+SK6643,Geriatric Depression Scale,geriatricdepressionscale,43232610
+SK6645,Millon Behavioral Medicine Diagnostic,millonbehavioralmedicinediagnostic,43232610
+SK6652,American Association of Critical Care Nurses AACN Medicopeia,americanassociationofcriticalcarenursesaacnmedicopeia,43232309
+SK6680,AtStaff Physician Scheduler,atstaffphysicianscheduler,43232108
+SK6686,Encite Dermatology Electronic Health Records EHR Software,encitedermatologyelectronichealthrecordsehrsoftware,43232610
+SK6719,Clinical Information Systems CISLab CPS,clinicalinformationsystemscislabcps,43232610
+SK6730,Digital image databases,digitalimagedatabases,43232309
+SK6739,GE Healthcare Centricity Laboratory,gehealthcarecentricitylaboratory,43232610
+SK6740,GE Healthcare Centricity Laboratory Anatomic Pathology/Cytology,"cytology,ge healthcare centricity laboratory anatomic pathology,gehealthcarecentricitylaboratoryanatomicpathology/cytology",43232610
+SK6741,GE Healthcare Centricity Laboratory Transfusion Medicine,gehealthcarecentricitylaboratorytransfusionmedicine,43232610
+SK6757,McKesson Horizon Lab Financials,mckessonhorizonlabfinancials,43231601
+SK6760,MEDITECH HCIS,meditechhcis,43232610
+SK6790,Sunquest Information Systems Sunquest Clinical Financials,sunquestinformationsystemssunquestclinicalfinancials,43231601
+SK6802,Computer Assisted Diagnostic Interview CADI software,computerassisteddiagnosticinterviewcadisoftware,43232610
+SK6810,Psychiatric information databases,psychiatricinformationdatabases,43232306
+SK6811,SoftPsych Psychiatric Diagnosis,softpsychpsychiatricdiagnosis,43232610
+SK6817,Digital image processing software,digitalimageprocessingsoftware,43232102
+SK6818,Digital Imaging Communications in Medicine DICOM medical imaging software,digitalimagingcommunicationsinmedicinedicommedicalimagingsoftware,43232610
+SK6844,Medical decision support software,medicaldecisionsupportsoftware,43232610
+SK6855,Tidepool Scientific Software Comprehensive Environmental Toxicity Information System CETIS,tidepoolscientificsoftwarecomprehensiveenvironmentaltoxicityinformationsystemcetis,43232306
+SK6856,Tidepool Scientific Software ToxCalc,tidepoolscientificsoftwaretoxcalc,43232605
+SK6858,Meditab IMS Orthopedics/Sports Medicine,"meditab ims orthopedics,meditabimsorthopedics/sportsmedicine,sports medicine",43232610
+SK6859,OmniMD Sports Medicine EHR,omnimdsportsmedicineehr,43232610
+SK6864,Ophthalmic imaging software,ophthalmicimagingsoftware,43232605
+SK6890,Eye Tracking Exercises Enterprises Track with Letters,eyetrackingexercisesenterprisestrackwithletters,43232104
+SK6892,HTS Vision HTS2 Computerized Binocular Home Eye Exercise System,htsvisionhts2computerizedbinocularhomeeyeexercisesystem,43232610
+SK6896,Commercial plate reader software,commercialplatereadersoftware,43232610
+SK6898,Medical digital imaging software,medicaldigitalimagingsoftware,43232610
+SK6901,Specimen tracking software,specimentrackingsoftware,43232610
+SK6904,Cell Bioscience Automated Image Capture,cellbioscienceautomatedimagecapture,43232605
+SK6905,Digital karyotyping software,digitalkaryotypingsoftware,43232605
+SK6912,Lucia CGH,luciacgh,43232605
+SK6913,Lucia Comet Assay,luciacometassay,43232605
+SK6914,Lucia FISH,luciafish,43232605
+SK6915,Lucia Karyo,luciakaryo,43232605
+SK6916,Lucia Metaphase Finder,luciametaphasefinder,43232605
+SK6917,LUCIA MFISH,luciamfish,43232605
+SK6920,Brady Specimen Labeling System,bradyspecimenlabelingsystem,43231510
+SK6921,Specimen labeling system software,specimenlabelingsystemsoftware,43231510
+SK6922,Diagnostic image review software,diagnosticimagereviewsoftware,43232610
+SK6923,Digital Imaging Communications in Medicine DICOM-compatible image acquisition and integration software products,"digital imaging communications in medicine dicom compatible image acquisition and integration software products,digital imaging communications in medicine dicomcompatible image acquisition and integration software products,digitalimagingcommunicationsinmedicinedicom-compatibleimageacquisitionandintegrationsoftwareproducts",43232610
+SK6925,Smart Digital Holter Monitor,smartdigitalholtermonitor,43232610
+SK6930,Digital Imaging Communications in Medicine DICOM software/modality management software,"digital imaging communications in medicine dicom software,digitalimagingcommunicationsinmedicinedicomsoftware/modalitymanagementsoftware,modality management software",43232610
+SK6949,Skyscape Rosen and Barkin's 5-Minute Emergency Medicine Consult,"skyscape rosen and barkin's 5 minute emergency medicine consult,skyscape rosen and barkin's 5minute emergency medicine consult,skyscaperosenandbarkin's5-minuteemergencymedicineconsult",43232309
+SK6991,Cyber Records MediChart Express,cyberrecordsmedichartexpress,43233413
+SK7003,GE Healthcare Logician,gehealthcarelogician,43232610
+SK7023,Siemens Soarian Financials,siemenssoarianfinancials,43231601
+SK7037,Specialist Data Solutions OctoPlus,specialistdatasolutionsoctoplus,43232610
+SK7039,American Orthotic and Prosthetic Association CodingPro,americanorthoticandprostheticassociationcodingpro,43232610
+SK7070,Digital Coach AthleticTrainer,digitalcoachathletictrainer,43232306
+SK7103,Financial record software,financialrecordsoftware,43231601
+SK7120,WinCity Custom Software WinCity Massage SOAP Notes,wincitycustomsoftwarewincitymassagesoapnotes,43232610
+SK7136,Precision Data Solutions VoicePower,precisiondatasolutionsvoicepower,43232104
+SK7158,Fire incident reporting systems,fireincidentreportingsystems,43232306
+SK7166,National Fire Incident Reporting System NFIRS,nationalfireincidentreportingsystemnfirs,43232306
+SK7180,Consular Consolidated Database CCD,consularconsolidateddatabaseccd,43232306
+SK7201,CISCO Software ACS Animal Control System,ciscosoftwareacsanimalcontrolsystem,43232306
+SK7212,Barrington Software CookenPro Commercial,barringtonsoftwarecookenprocommercial,43232306
+SK7246,Recipe cost control software,recipecostcontrolsoftware,43231506
+SK7247,CBORD NetRecipe,cbordnetrecipe,43232306
+SK7250,MicroBlast Recipe Wizard for Windows,microblastrecipewizardforwindows,43232306
+SK7251,Recipe software,recipesoftware,43232306
+SK7263,Facility use software,facilityusesoftware,43232306
+SK7286,Ticket Alternative Express Entry,ticketalternativeexpressentry,43232111
+SK7291,Belmar & Associates Mortware,belmar&associatesmortware,43232306
+SK7311,BioEx Systems Exercise Expert,bioexsystemsexerciseexpert,43232306
+SK7313,EZFacility Trainer Management System,ezfacilitytrainermanagementsystem,43231602
+SK7318,Visual Health Information The Trainer's Exercise Toolbox,visualhealthinformationthetrainer'sexercisetoolbox,43232112
+SK7319,American Precision Instruments Regit,americanprecisioninstrumentsregit,43232611
+SK7371,Allied Financial Software Act4Advisors,alliedfinancialsoftwareact4advisors,43232303
+SK7374,AMS Services AMS Sagitta,amsservicesamssagitta,43231602
+SK7400,North American Software Associates Eclipse,northamericansoftwareassociateseclipse,43231602
+SK7405,Special Agent,specialagent,43231602
+SK7408,Tritech Financial Systems General Insurance Management System GIMS,tritechfinancialsystemsgeneralinsurancemanagementsystemgims,43231602
+SK7418,Citi The Yield Book Calculator,cititheyieldbookcalculator,43231604
+SK7421,Financial needs analysis software,financialneedsanalysissoftware,43231604
+SK7488,Deep Forest Systems OnCite,deepforestsystemsoncite,43232306
+SK7501,Commercial and industrial development project cost analysis software,commercialandindustrialdevelopmentprojectcostanalysissoftware,43231604
+SK7507,Financial calculators software,financialcalculatorssoftware,43231604
+SK7510,Garmin City Select,garmincityselect,43232504
+SK7520,MediaVue,,43232107
+SK7524,National Association of Realtors Online Database,nationalassociationofrealtorsonlinedatabase,43232305
+SK7534,Real estate application contract transmission REACT software,realestateapplicationcontracttransmissionreactsoftware,43231604
+SK7554,Cisco Systems VPN Client,ciscosystemsvpnclient,43233203
+SK7580,TCI XML Credit Interface,tcixmlcreditinterface,43232309
+SK7607,ACS Technologies ACS Financial Suite,acstechnologiesacsfinancialsuite,43231601
+SK7610,American HealthTech Financial,americanhealthtechfinancial,43231601
+SK7611,Blackbaud The Financial Edge,blackbaudthefinancialedge,43231601
+SK7614,FlexiFinancials FlexiLedger,flexifinancialsflexiledger,43231601
+SK7641,Jack Henry & Associates Vertex,jackhenry&associatesvertex,43231602
+SK7652,IBM Judicial Enforcement Management System JEMS,ibmjudicialenforcementmanagementsystemjems,43232306
+SK7700,Automated circulation systems,automatedcirculationsystems,43232609
+SK7704,Automated financial software,automatedfinancialsoftware,43231601
+SK7712,Corporate Information Factory CIF,corporateinformationfactorycif,43232306
+SK7713,DCI iCore,dciicore,43231602
+SK7714,Fiserv financial services software,fiservfinancialservicessoftware,43232306
+SK7715,Harland Financial Solutions DepositPro,harlandfinancialsolutionsdepositpro,43232306
+SK7717,Systems Union Group MIS DecisionWare,systemsuniongroupmisdecisionware,43231604
+SK7764,Bornemann Associates Flight Plan,bornemannassociatesflightplan,43232601
+SK7767,Digital Gateway e-automate,"digital gateway e automate,digital gateway eautomate,digitalgatewaye-automate",43232303
+SK7824,Preactor APS,preactoraps,43231506
+SK7825,Preactor Finite Capacity Scheduling,preactorfinitecapacityscheduling,43231506
+SK7842,Electronic Data Interchange EDI systems,electronicdatainterchangeedisystems,43232403
+SK7843,Endicia Internet Postage,endiciainternetpostage,43231510
+SK7856,Precision TRA/X,"precision tra,precisiontra/x",43231506
+SK7875,Electronic diary software,electronicdiarysoftware,43232104
+SK7887,Wisconsin Physicians Service Insurance CMS Secure Net Access Portal C-SNAP,"wisconsin physicians service insurance cms secure net access portal c snap,wisconsin physicians service insurance cms secure net access portal csnap,wisconsinphysiciansserviceinsurancecmssecurenetaccessportalc-snap",43232610
+SK7897,Arts & Letters Express,arts&lettersexpress,43232102
+SK7952,Lancaster DHIA PCDART,lancasterdhiapcdart,43232306
+SK7971,Facilities management software,facilitiesmanagementsoftware,43232603
+SK7984,Aya Associates Comp-U-Floor,"aya associates comp u floor,aya associates compufloor,ayaassociatescomp-u-floor",43232306
+SK7985,Carpet Dealer Management System CDMS,carpetdealermanagementsystemcdms,43232306
+SK7992,Pacific Solutions FloorRight,pacificsolutionsfloorright,43231507
+SK8020,Logic Group Scanner Digitizing Software,logicgroupscannerdigitizingsoftware,43232111
+SK8042,North American Insulation Manufacturers Association NAIMA 3E Plus,northamericaninsulationmanufacturersassociationnaima3eplus,43232605
+SK8047,AEC Design Group CADPIPE,aecdesigngroupcadpipe,43232604
+SK8068,Quote Software QuoteExpress,quotesoftwarequoteexpress,43232605
+SK8075,Applied Systems Associates aSa Rebar,appliedsystemsassociatesasarebar,43231507
+SK8084,DigiTools Roof CAD,digitoolsroofcad,43232604
+SK8108,Municipal geographic management software,municipalgeographicmanagementsoftware,43231602
+SK8111,OptaSoft Commercial Building Inspector,optasoftcommercialbuildinginspector,43232606
+SK8134,Software Design Associates Computer Fencing System CFS,softwaredesignassociatescomputerfencingsystemcfs,43231507
+SK8185,Circuit evaluation software,circuitevaluationsoftware,43232605
+SK8222,Mitchell Manager Invoicing System,mitchellmanagerinvoicingsystem,43231601
+SK8238,CDI Electronics M.E.D.S.,"cdi electronics m e d s,cdi electronics meds,cdielectronicsm.e.d.s.",43232605
+SK8257,Emerson FIRSTVUE Value Sizing,emersonfirstvuevaluesizing,43232605
+SK8262,Facility energy management software,facilityenergymanagementsoftware,43232603
+SK8269,Intac International Wintac,intacinternationalwintac,43232306
+SK8294,Digital direct control DDC energy management software,digitaldirectcontrolddcenergymanagementsoftware,43232608
+SK8322,Machine Control Specialists CoilPro,machinecontrolspecialistscoilpro,43232608
+SK8365,Hexagon Metrology PC-DMIS,"hexagon metrology pc dmis,hexagon metrology pcdmis,hexagonmetrologypc-dmis",43231517
+SK8378,3D Systems Geomagic Design X,3dsystemsgeomagicdesignx,43232604
+SK8383,Cimatron CimatronE Master,cimatroncimatronemaster,43232604
+SK8409,Hamrick Software VueScan,hamricksoftwarevuescan,43232111
+SK8431,Graphics digitizing software,graphicsdigitizingsoftware,43232111
+SK8461,Siemens Spectrum PowerCC Distribution Management,siemensspectrumpowerccdistributionmanagement,43232608
+SK8482,Coordinated incident management system CIMS software,coordinatedincidentmanagementsystemcimssoftware,43233203
+SK8485,Digital control systems DCS,digitalcontrolsystemsdcs,43232608
+SK8494,Statistical process control SPC data collection devices,statisticalprocesscontrolspcdatacollectiondevices,43232608
+SK8497,Wilcox Associates PC-DMIS Inspection Planner,"wilcox associates pc dmis inspection planner,wilcox associates pcdmis inspection planner,wilcoxassociatespc-dmisinspectionplanner",43232608
+SK8514,Mainstreet Systems & Software DentaLab/PC II,"mainstreet systems & software dentalab,mainstreetsystems&softwaredentalab/pcii,pc ii",43232306
+SK8527,ExpressDigital Labtricity,expressdigitallabtricity,43232102
+SK8541,KCD cabinet design software,kcdcabinetdesignsoftware,43232604
+SK8557,Cimatron CimatronE,cimatroncimatrone,43232612
+SK8601,Delcam ArtCAM Express,delcamartcamexpress,43232612
+SK8613,Commercial vehicle operations CVO software,commercialvehicleoperationscvosoftware,43233511
+SK8651,Final approach spacing tool FAST,finalapproachspacingtoolfast,43232607
+SK8655,Decision Support Technologies Propworks,decisionsupporttechnologiespropworks,43231511
+SK8686,Digital Dispatch,digitaldispatch,43233511
+SK8691,PC Dispatch,pcdispatch,43233511
+SK8752,Lilly Software Associates VISUAL DCMS,lillysoftwareassociatesvisualdcms,43231508
