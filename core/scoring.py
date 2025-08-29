@@ -1,4 +1,3 @@
-from typing import List, Dict
 from .schemas import MatchDetail, ParsedDoc
 from .config import load_weights
 

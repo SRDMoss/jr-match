@@ -1,13 +1,22 @@
-streamlit
 fastapi
 uvicorn
-spacy
+python-multipart
 sentence-transformers
 numpy
 pandas
 scikit-learn
+
+# Parsers
 pdfplumber
 python-docx
+pymupdf
+pdfminer.six
+
+# Optional
+spacy
 rapidfuzz
+
+# FAISS backend (optional; Windows users may skip and use in-mem)
+faiss-cpu
 pydantic
 typer

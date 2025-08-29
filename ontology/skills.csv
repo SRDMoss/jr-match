@@ -113,6 +113,18 @@ SK1464,Berkshire Associates BALANCEaap,berkshireassociatesbalanceaap,43231505
 SK1494,Douglas Associates Forensic Filer,douglasassociatesforensicfiler,43232306
 SK1495,EMC Documentum,emcdocumentum,43232202
 SK1497,Genetic database software,geneticdatabasesoftware,43232306
+SK7001,Tableau,"tableau",SK000
+SK7002,Power BI,"power bi,powerbi",SK000
+SK7003,Predictive Modeling,"predictive modeling,predictive modelling",SK000
+SK7004,Data Visualization,"data visualization,dataviz",SK000
+SK7005,Data Warehousing,"data warehousing,etl",SK000
+SK7006,Programming,"programming,coding,software development",SK000
+SK7007,Regression Analysis,"regression,linear regression,logistic regression",SK000
+SK7008,Clustering,"clustering,k-means,kmeans",SK000
+SK7009,Classification,"classification,supervised learning",SK000
+SK7010,Windows Server,"windows server,windows-server",SK000
+SK7011,Agile,"agile,scrum",SK000
+SK7012,Quality Assurance,"qa,software quality assurance,sqa",SK000
 SK1506,Automated commercial environment software ACE,automatedcommercialenvironmentsoftwareace,43232306
 SK1509,Electronic data interchange EDI software,electronicdatainterchangeedisoftware,43233501
 SK1523,Decisioneering Crystal Ball,decisioneeringcrystalball,43232605

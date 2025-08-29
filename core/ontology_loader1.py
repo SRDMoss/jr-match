@@ -1,34 +1,28 @@
+# ADD or REPLACE these in core/ontology_loader.py
+
 import csv
-from typing import Dict
+from typing import Dict, List
 from .schemas import Skill
-
-def id_to_label_map(skills: dict) -> dict:
-    return {sk.id: sk.label for sk in skills.values()}
-
 
 def load_ontology(csv_path: str) -> Dict[str, Skill]:
     skills: Dict[str, Skill] = {}
     with open(csv_path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            alt = [a.strip() for a in row.get("alt_labels","").split(",") if a.strip()]
+            alt = [a.strip() for a in row["alt_labels"].split(",")] if row["alt_labels"] else []
             skills[row["id"]] = Skill(
-                id=row["id"],
-                label=row["label"],
-                alt_labels=alt,
-                parent_id=row.get("parent_id") or None
+                id=row["id"], label=row["label"], alt_labels=alt, parent_id=row["parent_id"] or None
             )
     return skills
 
 def alias_to_id_map(skills: Dict[str, Skill]) -> Dict[str, str]:
     """
     Build a robust alias→id map. Includes:
-      - canonical label
+      - the canonical label itself
       - alt_labels
       - punctuation variants (., -, / removed or spaced)
-      - *.js -> add base (e.g., 'vue.js' -> 'vue')
-    All keys are lowercased and unicode-normalized implicitly by extractor.
+      - special handling for *.js → also add base (e.g., 'vue.js' → 'vue')
     """
-    def variants(s: str):
+    def variants(s: str) -> List[str]:
         s = s.strip().lower()
         if not s:
             return []
@@ -38,24 +32,31 @@ def alias_to_id_map(skills: Dict[str, Skill]) -> Dict[str, str]:
         outs.add(s.replace("-", " "))
         outs.add(s.replace("/", " "))
         if s.endswith(".js"):
-            outs.add(s[:-3])
+            outs.add(s[:-3])  # 'vue.js' -> 'vue'
         return [v.strip() for v in outs if v.strip()]
 
     m: Dict[str, str] = {}
-    WHITELIST = {"c#", "c++", "js", "go"}
-    AMBIG = {"np","rs","es","tf","ps1","rbac","auth","cache"}
+    WHITELIST = {"c#", "c++", "js", "go"}  # allow specifically
+    AMBIG = {"np","rs","es","tf","ps1","rbac","auth","cache"}  # drop
 
     for sk in skills.values():
-        candidates = [sk.label, *sk.alt_labels, sk.id]
+        # include the label as an alias too
+        candidates = [sk.label] + (sk.alt_labels or [])
+
         for cand in candidates:
             for alias in variants(cand):
+                # length/ambiguity guard after varianting
                 if alias in AMBIG:
                     continue
                 if len(alias) < 3 and alias not in WHITELIST:
                     continue
-                m.setdefault(alias, sk.id)
+                m[alias] = sk.id
     return m
 
+
+def id_to_label_map(skills: Dict[str, Skill]) -> Dict[str, str]:
+    return {sk.id: sk.label for sk in skills.values()}
+
 def category_ids(skills: Dict[str, Skill]) -> set:
-    # Only treat the single root as category; keep its children.
-    return {"SK000"}
+    # Treat root and immediate children of root as categories
+    return { "SK000", *[sk.id for sk in skills.values() if sk.parent_id == "SK000"] }

@@ -1,5 +1,6 @@
 import json, os
 
+USE_FAISS = True
 _DEFAULT = {"sim_weight": 0.6, "cov_weight": 0.4}
 
 def load_weights(cfg_path: str | None = None) -> tuple[float, float]:

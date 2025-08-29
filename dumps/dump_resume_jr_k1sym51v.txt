@@ -1,0 +1,62 @@
+S T E P H E N M O S S
+59 Route 41, Winthrop, Maine 04364 • 410.241.3418 • thisisstephenmoss@gmail.com
+linkedin.com/in/thisisstephenmoss/ • github.com/SRDMoss • stephenmossis.cool
+QUALIFICATIONS SUMMARY
+Linguistics-trained software developer with expertise in text manipulation, text parsing, vector matching,
+and ontology-driven NLP. Skilled in creating custom parsers, mapping extracted entities to structured
+ontologies, and delivering explainable, high-accuracy results. Holds a BA in Linguistics and an MS in
+software Development, combining deep linguistic knowledge with advanced programming capability.
+CORE SKILLS & COMPETENCIES
+Natural Language Processing & Linguistics
+Text parsing & manipulation (rule-based, regex, tokenization)
+Vector matching & semantic similarity scoring
+Ontology design & mapping (ESCO, O*NET)
+Entity recognition (NER with spaCy) • Gazetteers & alias normalization
+Linguistic analysis
+Programming & Development
+Python (spaCy, sentence-transformers, Pandas, BeautifulSoup, FastAPI, Django)
+JavaScript (Vue.js, Node.js) • HTML, CSS, JSON
+Version control (Git/GitHub)
+Databases & Data Management
+SQL (MySQL, SQLite, SQL Server) • NoSQL (MongoDB, Mongoose)
+ETL pipelines • Metadata storage & retrieval
+Web Development & UI/UX
+Responsive design • SPA development (Vue.js)
+REST API integration • Bootstrap & Handlebars templating
+Communication & Languages
+English (Native) • American Sign Language (Fluent) • Spanish (Intermediate)
+Cross-cultural communication • Accessibility advocacy
+EDUCATION
+MS, Software Development — Boston University, Jan 2024 (GPA: 3.63)
+BA, Linguistics (Honors) — University of Maryland, May 2015 (GPA: 3.71)
+BA, Psychology — University of Maryland, May 2015 (GPA: 3.70)
+AAS, Interpreter Preparation — CCBC, Dec 2010 (GPA: 3.25)
+SELECTED PROJECTS
+JR Match (Job description to Resume matcher)— Python, FastAPI, spaCy, sentence-transformers,
+FAISS, SQLite/MySQL, ESCO/O*NET
+• Developed custom text parsers for resumes/JDs to extract skills, job titles, employers, and dates.
+• Normalized extracted skills to ontology IDs and implemented vector matching with semantic
+similarity.
+• Produced transparent rankings with matched skills, evidence sentences, and gap analysis.
+City Rater — Python, MongoDB, BeautifulSoup, APIs
+• Parsed unstructured municipal data via web scraping and APIs into structured, comparable
+metrics.
+• Applied ontology-like category mapping for standardized scoring.
+• Created a dynamic weighting and filtering engine for custom rankings.
+Mossletters — Node.js, MongoDB, Bootstrap, Handlebars
+• Built contact management application with structured data parsing for import/export.
+• Developed CRUD features with responsive UI and secure authentication.
+• Designed templating system for rapid content generation.
+PROFESSIONAL EXPERIENCE
+Freelance NLP & Data Annotation Specialist
+DataAnnotation.tech, Alignerr (Remote) | Oct 2023 – Present
+• Designed text parsing and annotation patterns to improve extraction precision.
+• Validated vector similarity results for accuracy and contextual relevance.
+• Normalized extracted entities to standardized taxonomies and ontologies.
+Enrollment Management Assistant
+Pearson Virtual Schools (Remote) | Jun 2017 – Feb 2024
+• Managed compliance documentation and PII security for state audits.
+• Provided SME-level training on internal software tools and workflows.
+English/ASL Interpreter
+Hearing and Speech Agency, Baltimore, MD | Sep 2009 – Jun 2017
+• Facilitated real-time translation between ASL and English in varied professional contexts.
