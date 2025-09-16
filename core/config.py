@@ -15,3 +15,18 @@ def load_weights(cfg_path: str | None = None) -> tuple[float, float]:
         return sw, cw
     except Exception:
         return _DEFAULT["sim_weight"], _DEFAULT["cov_weight"]
+
+def backend_from_env() -> str:
+    """
+    Returns one of: 'faiss', 'sqlite', 'inmem'
+    Priority: ENV BACKEND → USE_FAISS → default 'inmem'
+    """
+    b = os.getenv("JR_BACKEND", "").strip().lower()
+    if b in {"faiss", "sqlite", "inmem"}:
+        return b
+    if USE_FAISS:
+        return "faiss"
+    return "inmem"
+
+def sqlite_path_from_env() -> str:
+    return os.getenv("JR_SQLITE_PATH", os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "jr_match.sqlite3"))

@@ -29,4 +29,10 @@ config.json
 # ------------------------
 dumps/
 
+# ------------------------
+# Database
+# ------------------------
+data/*.sqlite3
+data/*.db
+data/jr_match.sqlite3
 

@@ -1,111 +1,165 @@
-from fastapi import FastAPI, UploadFile, File
-from fastapi.responses import JSONResponse
-from pathlib import Path
-import os, tempfile, traceback, numpy as np
-from core.ontology_loader import load_ontology, id_to_label_map
+# App.py — Streamlit UI with pluggable vector backends (inmem / sqlite / faiss)
+
+import os, sys, tempfile, uuid
+
+# Make sure "core" is importable whether App.py lives at repo root or in /ui
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(THIS_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.append(REPO_ROOT)
+
+import streamlit as st
 
 from core.extractor import extract
 from core.embed import embed
 from core.search_inmem import InMemIndex
-from core.config import USE_FAISS
 from core.scoring import score
+from core.ontology_loader import load_ontology, id_to_label_map
+from core.explain import find_evidence_for_matches, suggest_gap_phrases
+from core.config import load_weights
 
-# Try FAISS import lazily; if missing, we’ll fall back to in-mem
+# ---- Optional backends (tolerate missing modules) ----
+FaissIndex = None
 try:
-    from adapters.search_faiss import FaissIndex  # type: ignore
+    # Try both potential locations, depending on where you placed the file
+    from core.search_faiss import FaissIndex
 except Exception:
-    FaissIndex = None  # noqa: N816
-
-app = FastAPI(title="JR Match", docs_url="/docs", redoc_url="/redoc")
-
-ONTO = str((Path(__file__).resolve().parents[1] / "ontology" / "skills.csv"))
-
-def _save_upload_tmp(up: UploadFile) -> str:
-    ct = (up.content_type or "").lower()
-    ext = ".pdf" if "pdf" in ct else ".docx" if ("word" in ct or "docx" in ct) else ".txt"
-    name_ext = os.path.splitext(up.filename or "")[1].lower()
-    if name_ext in {".pdf", ".docx", ".txt"}:
-        ext = name_ext
-    fd, path = tempfile.mkstemp(prefix="jr_", suffix=ext)
-    with os.fdopen(fd, "wb") as f:
-        f.write(up.file.read())
-    up.file.seek(0)
-    return path
-
-@app.get("/")
-def home():
-    return {
-        "use": "/docs → POST /match → upload resume + jd",
-        "alt": "POST /match with multipart/form-data (resume, jd)"
-    }
-
-@app.post("/match")
-async def match(resume: UploadFile = File(...), jd: UploadFile = File(...)):
     try:
-        rpath = _save_upload_tmp(resume)
-        jpath = _save_upload_tmp(jd)
+        from search_faiss import FaissIndex
+    except Exception:
+        FaissIndex = None
 
-        res = extract(rpath, ONTO, dump_tag="resume")
-        job = extract(jpath, ONTO, dump_tag="jd")       
+SQLiteIndex = None
+try:
+    from core.search_sqlite import SQLiteIndex  # requires you added core/search_sqlite.py
+except Exception:
+    SQLiteIndex = None
 
-        # Build texts to embed (fallback to sections / whole doc)
-        jd_texts = [b.text for b in job.bullets if b.text.strip()]
-        if not jd_texts:
-            jd_texts = [" ".join(job.sections.skills)] if job.sections.skills else [job.text[:1000] or ""]
+# ---- Streamlit setup ----
+st.set_page_config(page_title="JR Match", layout="wide")
+st.title("JR Match")
 
-        res_texts = [b.text for b in res.bullets if b.text.strip()]
-        if not res_texts:
-            res_texts = [" ".join(res.sections.skills)] if res.sections.skills else [res.text[:1000] or ""]
+ROOT = REPO_ROOT
+ONTOLOGY_CSV = os.path.join(ROOT, "ontology", "skills.csv")
+os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)
 
-        # Choose index backend
-        use_faiss = bool(USE_FAISS and FaissIndex is not None)
-        idx = (FaissIndex() if use_faiss else InMemIndex())
+# -------- Sidebar controls --------
+backend_choice = st.sidebar.radio(
+    "Vector backend",
+    options=["inmem", "sqlite", "faiss"],
+    index=0,
+    help="SQLite persists vectors (zero external deps). FAISS is fastest if available."
+)
 
-        # Index JD side
-        jd_vecs = embed(jd_texts)
-        idx.index(jd_vecs, meta=jd_texts)
+if backend_choice == "sqlite" and SQLiteIndex is None:
+    st.sidebar.warning("SQLite backend not found. Did you add core/search_sqlite.py?")
+if backend_choice == "faiss" and FaissIndex is None:
+    st.sidebar.warning("FAISS not available. Install faiss-cpu or switch backend.")
 
-        # Per-bullet max sim
-        top_sim = 0.0
-        for bt in res_texts:
-            qv = embed([bt])[0]
-            ans = idx.query(qv, k=1)
-            if ans:
-                top_sim = max(top_sim, ans[0][0])
+db_path = st.sidebar.text_input(
+    "SQLite DB path",
+    value=os.getenv("JR_SQLITE_PATH", os.path.join(ROOT, "data", "jr_match.sqlite3")),
+    help="Only used when backend = sqlite"
+)
 
-        # Whole-doc fallback sim
-        r_vec = embed([" ".join(res_texts)])[0]
-        j_vec = embed([" ".join(jd_texts)])[0]
-        doc_sim = float(np.dot(r_vec, j_vec))
-        top_sim = max(top_sim, doc_sim)
+sim_w, cov_w = load_weights()
+st.sidebar.caption(f"Scoring weights → Semantic: **{sim_w:.2f}**  |  Coverage: **{cov_w:.2f}**")
 
-        detail = score(res, job, top_sim)
-        id2label = id_to_label_map(load_ontology(ONTO))
+# -------- Load ontology --------
+skills = load_ontology(ONTOLOGY_CSV)
+id2label = id_to_label_map(skills)
 
+# -------- Inputs --------
+resume_file = st.file_uploader("Upload Resume (.pdf/.docx)", type=["pdf", "docx"], key="resume")
+jd_file = st.file_uploader("Upload Job Description (.pdf/.docx)", type=["pdf", "docx"], key="jd")
 
-        return {
-            **detail.model_dump(),
-            "resume_labels":  [id2label.get(x, x) for x in res.skills],
-            "jd_labels":      [id2label.get(x, x) for x in job.skills],
-            "matched_labels": [id2label.get(x, x) for x in detail.matched_skills],
-            "gaps_labels":    [id2label.get(x, x) for x in detail.gaps],
-            "_debug": {
-                "backend": "faiss" if use_faiss else "inmem",
-                "res_bullets": len(res.bullets),
-                "jd_bullets": len(job.bullets),
-                "res_skills": len(res.skills),
-                "jd_skills": len(job.skills),
-                "jd_texts_indexed": len(jd_texts),
-                "doc_sim": doc_sim,
-                "onto_exists": Path(ONTO).exists(),
-                "ontology_size": len(id2label),
-            },
-        }
-    except Exception as e:
-        return JSONResponse(
-            status_code=500,
-            content={
-                "error": str(e),
-                "trace": traceback.format_exc(),
-            },
-        )
+run = st.button("Run Match", type="primary")
+
+if run and resume_file and jd_file:
+    # Save uploads to temp files
+    r_ext = os.path.splitext(resume_file.name)[1].lower() or ".pdf"
+    j_ext = os.path.splitext(jd_file.name)[1].lower() or ".pdf"
+    with tempfile.NamedTemporaryFile(delete=False, suffix=r_ext) as rf:
+        rf.write(resume_file.read())
+        rpath = rf.name
+    with tempfile.NamedTemporaryFile(delete=False, suffix=j_ext) as jf:
+        jf.write(jd_file.read())
+        jpath = jf.name
+
+    # Parse docs
+    res = extract(rpath, ONTOLOGY_CSV, dump_tag="resume")
+    job = extract(jpath, ONTOLOGY_CSV, dump_tag="jd")
+
+    # Prepare bullet texts (with sensible fallbacks)
+    res_bullets = [b.text for b in res.bullets if b.text.strip()] or (
+        [" ".join(res.sections.skills)] if res.sections.skills else [res.text[:1000] or ""]
+    )
+    jd_bullets = [b.text for b in job.bullets if b.text.strip()] or (
+        [" ".join(job.sections.skills)] if job.sections.skills else [job.text[:1000] or ""]
+    )
+
+    # -------- Select backend --------
+    backend_name = "inmem"
+    if backend_choice == "sqlite" and SQLiteIndex is not None:
+        idx_name = f"ui_{uuid.uuid4().hex[:8]}"          # short-lived index per run
+        idx = SQLiteIndex(db_path=db_path, index_name=idx_name)
+        backend_name = "sqlite"
+    elif backend_choice == "faiss" and FaissIndex is not None:
+        idx = FaissIndex()
+        backend_name = "faiss"
+    else:
+        if backend_choice != "inmem":
+            st.info("Falling back to InMem backend.")
+        idx = InMemIndex()
+
+    # -------- Index JD bullets --------
+    jd_vecs = embed(jd_bullets)
+    idx.index(jd_vecs, meta=jd_bullets)
+
+    # -------- Compute best semantic similarity --------
+    sims = []
+    for bt in res_bullets:
+        q = embed([bt])[0]
+        ans = idx.query(q, k=1)
+        if ans:
+            sims.append(ans[0][0])
+    top_sim = max(sims) if sims else 0.0
+
+    # -------- Score --------
+    detail = score(res, job, top_sim)
+
+    # -------- Display --------
+    st.metric("Total Score", f"{detail.total:.3f}")
+    st.caption(f"Backend: **{backend_name}**  ·  Resume bullets: {len(res_bullets)}  ·  JD bullets: {len(jd_bullets)}")
+
+    matched_pairs = sorted([(sid, id2label.get(sid, sid)) for sid in detail.matched_skills], key=lambda x: x[1].lower())
+    gap_pairs = sorted([(sid, id2label.get(sid, sid)) for sid in detail.gaps], key=lambda x: x[1].lower())
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("Matched Skills")
+        st.write([f"{sid} — {lbl}" for sid, lbl in matched_pairs] or "—")
+    with col2:
+        st.subheader("Gaps")
+        st.write([f"{sid} — {lbl}" for sid, lbl in gap_pairs] or "—")
+
+    st.caption(f"Weights — Semantic: {sim_w:.2f}, Coverage: {cov_w:.2f}")
+
+    # -------- Explainability --------
+    st.subheader("Evidence & Suggestions")
+
+    evidence = find_evidence_for_matches(res.bullets, detail.matched_skills, ONTOLOGY_CSV)
+    if any(evidence.values()):
+        with st.expander("Evidence sentences (from resume bullets)"):
+            for sid, lbl in matched_pairs:
+                ev = evidence.get(sid)
+                if ev:
+                    st.markdown(f"- **{lbl}**: {ev}")
+    else:
+        st.caption("No direct alias hits found in bullets for matched skills.")
+
+    gap_suggestions = suggest_gap_phrases(detail.gaps, ONTOLOGY_CSV)
+    if gap_suggestions:
+        with st.expander("Suggested phrasing for missing skills"):
+            for sid, lbl in gap_pairs:
+                st.markdown(f"- **{lbl}**: {gap_suggestions.get(sid)}")
